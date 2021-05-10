@@ -1,162 +1,247 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <link rel="stylesheet" href="assets/css/style.css">
-        <title>Jess M.</title>
-    </head>
-    <body>
-        <div class="box">
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-            <!-- Header -->
-            <div class="info-banner row header">
-                <div id="parent-button-info">
-                    <div class="navigation-button" id="about-button">
-                        ABOUT ME
-                    </div>
-                    <div class="navigation-button" id="projects-button">
-                        PROJECTS
-                    </div>
-                </div>   
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
 
-                <!-- Grid wrapper -->
-                <div class="wrapper" id="header-wrapper">
-                    
-                    <!-- Start of HOME section -->
+    <!-- Googe Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
 
-                    <!-- Author bubble -->
-                    <div id="info-bubble1" class="info-bubble">
-                        
-                            <div id="author-bubble" class="svg-container">
-                                <p id="author">Jessica Malfait</p>
-                            </div>
-                    
-                    </div>
-                    
-                    <!-- Skills bubble -->
-                    <div id="info-bubble2" class="info-bubble">
-                        
-                            <div id="skills-bubble" class="svg-container">
-                                <div class="header-title-1"">
-                                    My Skills:
-                                </div>
-                                <div class="content">
-                                    <p>Sketching, Wireframing, Rapid Prototyping, UX Research, UI Design, Interaction Design, Responsive Web Design, HTML, CSS</p>
-                                </div>
-                                <div class="content">
-                                    <p>Figma, AdobeXD, Photoshop, VSCode, GitHub, Vue</p>
-                                </div>
-                            </div>
-                        
-                    </div>
-                    
-                    <!-- Links bubble -->
-                    <div id="info-bubble3" class="info-bubble">
-                        
-                        <div id="contact-me-bubble" class="svg-container">
-                            <div class="header-title-2">Contact Me:</div>
-                            <div class="content">
-                                <ul class="no-bullet-list">
-                                    <li>hello@jessmalfait.com</li>
-                                    <li>LinkedIn</li>
-                                    <li>Dribbble</li>
-                                </ul>
-                            </div>
-                        
-                        </div>
-                    </div>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Jess M.</title>
+  </head>
+
+  <body>
+
+      <!-- Nav -->
+    <nav class="navbar">
+
+      <ul class="nav">
+        <li class="nav-item nav-item-logo-left">
+          <img src="assets/images/nav_name_logo.svg" alt="nav_name_logo"/>
+        </li>
+      </ul>
+
+      <ul class="nav justify-content-end">
+        <li class="nav-item">
+            <a class="nav-link text-dark fs-3" href="index.html">ABOUT ME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark fs-3" href="index.html">HOME</a>
+      </li>
+      </ul>
+    </nav>
+    <br/>
+
+    <!-- Introduction -->
+    <div class="jumbotron jumbotron-fluid mt-2">
+      <div class="container">
+        <h1 class="display-4 case-intro-text">Nugget - A News App</h1>
+      </div>
+    </div>
+
+    <!-- Figure -->
+    <div class="container mt-6">
+      <div class="row justify-content-center mt-5">
+        <div class="col-6">
+          <figure class="figure">
+            <img src="assets/images/NuggetApp_1.png" alt="nugget app" class="figure-img img-fluid"/>
+          </figure>
+        </div>
+          <figcaption class="figure-caption text-center .text-nowrap">
+            During my UX/UI Bootcamp course, we were challneged to create an app that could solve an everyday problem. A small group of classmates and I decided to tackle the social issue of news anxiety and created an app that allows users to feel more in control of the news that they recieve and the emotions that news can cause.
+          </figcaption>
+      </div>
+    </div>
+
+    <!-- Case Study -->
+    <div class="container">
+
+      <div class="row mt-5 mb-5">
+          <h3>Role</h3>
+          <p>UX Researcher & UI Designer</p>
+      </div>
+
+
+      <div class="row mt-5 mb-5">
+          <h3>Technology Used</h3>
+          <p>Miro, Figma & Trello</p>
+      </div>
+
+      <div class="row mt-5 mb-5">
+        <h3>The Problem</h3>
+        <p>Today, there are thousands of news sources constantly bombarding us with information. It feels nearly impossible to keep track and stay interested in it all, but we feel a sense of duty to do so. We are trying to solve this problem of too much information and too little time or ability to focus our attention to keep up with the news.</p>
+      </div>
+
+      <div class="row mt-5 mb-5">
+        <h3>Our Solution</h3>
+        <p>A highly customizable news app that thoroughly breaks down notification settings giving the user control to unplug when necessary and encourages users to be mindful about their news experience. Mindfulness allows users to be conscious of the emotional impact of the articles they read. We also provide them with tools on how to respond to those emotions.</p>
+      </div>
+
+      <div class="container pt-2 pb-2 app-images-container">
+        <div class="row mt-5 mb-5">
+              <div class="col">
+                <figure class="figure">
+                  <img src="assets/images/nugget_hifi_1.svg" class="figure-img img-fluid" alt="nugget app 1"/>
+                </figure>
+              </div>
+              <div class="col">
+                <figure class="figure">
+                  <img src="assets/images/nugget_hifi_2.svg" class="figure-img img-fluid" alt="nugget app 1"/>
+                </figure>
+              </div>
+              <div class="col">
+                <figure class="figure">
+                  <img src="assets/images/nugget_hifi_3.svg" class="figure-img img-fluid" alt="nugget app 1"/>
+                </figure>
+              </div>
+              <div class="col">
+                <figure class="figure">
+                  <img src="assets/images/nugget_hifi_4.svg" class="figure-img img-fluid" alt="nugget app 1"/>
+                </figure>
+              </div>
+        </div>
+      </div>
+
+      <div class="row mt-5 mb-5">
+        <h3>Research</h3>
+        <p>We interviewed 6 potential users located in the United States through a variety of methods including in-person, over the phone and through Zoom. We also shared a short survey that we created through SurveyMonkey through our social media platforms. We generated questions that gave us a better understanding of how people feel about news, what sources they get their news from, and how they receive that information.</p>
+      </div>
+
+      <div class="row mt-5 mb-5">
+        <h4>User Insight</h4>
+        <p>During our interviews and surveys, we discovered that many people found the amount of notifications to be overwhelming and have deep concern about the accuracy of information. People need a way to unplug and be in the moment while still staying informed. Users are currently unsatisfied with the way they receive news and that we might be able to help if we allow users to have more control over their news experience.</p>
+      </div>
+
+      <div class="row mt-5 mb-1">
+        <h3>Definition and Ideation</h3>
+      </div>
+      <div class="row mt-2 mb-5">
+        <h4>User Persona</h4>
+        <p>Meet our user persona, Rita! She is a busy 29 year old Real Estate Agent living in New York, NY with one roommate. She is an avid news reader and feels a deep sense of responsibility to stay up to date with current events but the news can be scary and upsetting for her. She feels guilty if she doesn’t stay up to date with the news because they are topics that she feels passionate about and they affect her and her family. The demand for rentals has skyrocketed and she has been very busy at work but the constant push notifications are distracting. Rita just wants to feel more in control of the information she receives.</p>
+      </div>
+
+      <div class="row justify-content-center mt-5">
+        <div class="col-8">
+          <figure class="figure">
+            <img src="assets/images/user_persona.svg" alt="user persona" class="figure-img img-fluid"/>
+          </figure>
+        </div>
+      </div>
+
+
+      <div class="row mt-5 mb-5">
+        <h4>Ideation</h4>
+        <p>Next, we had a brainstorm session for ideas we wanted to include in our app and created the 3 lists, “I like,” “I wish,” and “what if.” We then plotted our ideas on a Feature Prioritization Matrix. Then, keeping our project statement on the forefront of our minds, we voted on the features we felt provided the best impact while also helping the users achieve their goal of control and mindfulness.</p>
+      </div>
+
+      <div class="row justify-content-center mt-5">
+        <div class="col-8">
+          <figure class="figure">
+            <img src="assets/images/user_journey_map.svg" alt="user persona" class="figure-img img-fluid"/>
+          </figure>
+        </div>
+      </div>
+
+      <div class="row mt-5 mb-5">
+        <p>We then created a user journey map for Rita that tells her story of feeling overwhelmed and distracted at work by the constant bad news notifications. Rita goes home and meets Nugget, the highly customizable and mindful news app. She sets her preferences and settings and takes control of her news experience. The next day she feels focused and stress free because she is only getting news that she wants, when she wants it.</p>
+      </div>
+
+      <div class="row mt-5 mb-5">
+        <h3>Sketches and Wireframes</h3>
+        <p>Before beginning to sketch, we created a user flow to help keep us on track. Then we each created paper wireframes separately and then regrouped and synthesized a clickable prototype with what we thought were the most intuitive screens for our users. This was a little challenging because our design choices varied so it wasn’t quite a cohesive product as you clicked through screens. We were nervous that this would skew our user testing and would distract from the usability of the app and its features. So, from this paper prototype we created the lo-fi version you see below. </p>
+      </div>
+  
+        <div class="container pt-2 pb-2 app-images-container">
+          <div class="row mt-5 mb-5 justify-content-center">
+                <div class="col-md-4">
+                  <figure class="figure">
+                    <img src="assets/images/nugget_lofi_1.svg" class="figure-img img-fluid" alt="nugget app lo-fi"/>
+                  </figure>
                 </div>
-                <!-- end HOME section -->
-
-                <!-- start ABOUT ME section -->
-                <div class="box" id="about-me-section-box">   
-                    <div id="about-intro">Hi!</div>  
-                    <div class="two-column-grid-1"> 
-                        <div class="project-content">
-                            I am a UX Designer. My goal is to help make technology more accessible
-                            through design and empathy. I aim to truly understand the user’s point of 
-                            view through interviews and research. Design thinking centers around empathy 
-                            and the user and my diverse background in healthcare as a registered nurse has
-                            helped hone my empathic abilities and really understand people. I have a keen attention 
-                            to detail and am able to quickly think critically in order to solve problems. I have 
-                            experince in ux research, ui design and interaction design and excels in soft 
-                            skills such as empathy, leadership and communication. 
-                        </div>
-                        <div id="about-me-image">
-                            <img src="assets/images/placeholder.png" alt="placeholder image for portrait." width="632" height="506"/>
-        
-                        </div>
-                    </div>
+                <div class="col-md-4">
+                  <figure class="figure">
+                    <img src="assets/images/nugget_lofi_2.svg" class="figure-img img-fluid" alt="nugget app lo-fi"/>
+                  </figure>
                 </div>
-                <!-- end ABOUT ME section -->
+          </div>
+        </div>
 
+        <div class="row mt-5 mb-5">
+          <h3>Prototyping & User Testing</h3>
+          <p>After user testing we realized having the bulk of our notification features briefly explained via one “About” page that the user only saw if they clicked a “?” next to the setting was not doing the users any service. We iterated on this and developed a micro user flow to help develop a logical flow to having our users learn about and set up these customizations. Also, initially, no matter what emotion the user reported feeling we took them to the same page (shown to the right). We realized this wasn’t providing our users with any real tools to help them cope with their emotions so we developed different responses based on how the user is feeling with helpful integrations such as calls to action, breathing exercises and feel good music.</p>
+        </div>
+        <div class="row mt-5 mb-3">
+          <h3>Final Prototype</h3>
+        </div>
+
+        <div class="container pt-2 pb-2 app-images-container">
+          <div class="row mt-5 mb-5">
+                <div class="col">
+                  <figure class="figure">
+                    <img src="assets/images/nugget_iphone_1.svg" class="figure-img img-fluid" alt="nugget app 1"/>
+                  </figure>
                 </div>
-                    <!-- Close banner -->
-            </div>
-        </div>    
-            <!-- Projects Section -->
-        <div class="box" id="projects-section-box">
-            <!-- Title -->
-            <div class="project-title-1">
-                My Projects:
-            </div>
+                <div class="col">
+                  <figure class="figure">
+                    <img src="assets/images/nugget_iphone_2.svg" class="figure-img img-fluid" alt="nugget app 1"/>
+                  </figure>
+                </div>
+                <div class="col">
+                  <figure class="figure">
+                    <img src="assets/images/nugget_iphone_3.svg" class="figure-img img-fluid" alt="nugget app 1"/>
+                  </figure>
+                </div>
+                <div class="col">
+                  <figure class="figure">
+                    <img src="assets/images/nugget_iphone_4.svg" class="figure-img img-fluid" alt="nugget app 1"/>
+                  </figure>
+                </div>
+          </div>
+        </div>
+
+        <div class="row mt-5 mb-5">
+          <h3>Conclusion & Reflection</h3>
+          <p>In the end we are all incredibly proud of our work from the app’s inception being so timely to our current lives to our creation of the touch base feature which none of our competitors offer. We found an anxiety shaped hole in the lives of news readers that no other news app seemed to address when it came to their notification preferences other than to turn the whole thing off. The three of us were passionate about news awareness and creating healthy habits for news readers, and as we come to a close on this project we wish we had more time and resources to research deeper into the psychology of user’s “healthy habits” and how they differ from one’s political identification. 
+
+            It would be fascinating to see how a more liberal mindset might find one tool more or less useful from someone who is more conservative, and possibly add a feature that encourages that user to read an opposing view to think critically about their beliefs. 
             
-            <div class="two-column-grid-1 row">
+            As an ever more grand wish, we could potentially partner with organizations for relief funds or activism, as well as apps like Headspace that could feature guided meditations rather than moments of silence. We would also love to dive deeper into color theory to better understand what hues soothe the eyes or help retain focus. 
+            
+            We believe we have designed a strong core purpose of Nugget, but deeper research on these things would truly make Nugget a well-rounded app accessible for daily and lifelong use. 
+            </p>
+        </div>
 
-                <!-- start project 1 -->
-                <div class="two-column-left-first-row">
-                    <div class="project-title-2">Nugget</div>
-                        <div class="project-content">
-                            <p>A UX Case Study completed about a news app designed for busy people that want more 
-                                control over how the receive their news.</p>
-                        </div>
-                        <div class="project-content">
-                            <p>Role: UX Researcher and designer</p>
-                        </div>
-                </div>
-                <div class="two-column-right-first-row">
-                    <img src="assets/images/NuggetApp 1.png" alt="Nugget App Welcome page" width="632" height="506"/>
-                </div>  
-                
-                <!-- start project 2 -->
-                <div class="two-column-left-second-row">
-                    <div class="project-title-2">
-                        <p>Globalgrassroots.org</p>
-                    </div>
-                        <div class="project-content">
-                            <p>UI Redesign project for a small non-profit organization that will help explain the goal of
-                            the organization clearly to the user and increase donations.</p>
-                        </div>
-                        <div class="project-content">
-                            <p>Role: UI Designer</p>
-                        </div>
-                </div>
-                <div class="two-column-grid-right-second-row">
-                    <img src="assets/images/Globalgrassroots 1.png" alt="Globalgrassroots redesign homepage" width="632" height="506"/>
-                </div>    
+        <footer>
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-sm-4">
+                <ul>
+                  <li>Linkedin</li>
+                  <li>Instagram</li>
+                  <li >Dribble</li>
+                </ul>
+              </div>
+              <div class="col-sm-4 text-center">
+                <a href="mailto:hello@jessmalfait.com" target="_blank" class="btn btn-link">hello@jessmalfait.com</a>
+              </div>
+              <div class="col-sm-4 text-end">
+                <ul>
+                  <li>Copyright 2021</li>
+                  <li>All rights reserved.</li>
+                </ul>
+              </div>
             </div>
-        </div>        
-    
-    <!-- Begin footer -->
-    <footer>
-           <div class="footer-block-grid">
-               <div class="inline-block">
-                    <ul class="no-bullet-list">
-                        <li>LinkedIn</li>
-                        <li>Instagram</li>
-                        <li>Dribbble</li>
-                    </ul>
-                </div>
-                <div class="inline-block">hello@jessmalfait.com</div>
-                <div class="inline-block">
-                    <ul class="no-bullet-list">
-                        <li>Copyright 2021</li>
-                        <li>All rights reserved.</li>
-                    </ul>
-                </div>
-           </div>
-       </footer>
-    </body>
-    <!-- Load local js files here -->
-    <script src="assets/js/index.js"></script>
+          </div>
+        </footer>
+        
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+  </body>
 </html>
