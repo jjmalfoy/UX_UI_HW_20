@@ -1,0 +1,34 @@
+
+/* NAVIGATION */
+
+/* .nav {
+    padding-top: 3.33%;
+    padding-right: 3.33%;
+} */
+
+/* Add a right border to each nav element */
+.nav>li {
+    border-right: 1px solid black;
+}
+/* Remove the border from the last item */
+.nav>li:last-child{
+    border: none;
+ }
+
+ .navbar {
+     padding-left: 3em;
+     padding-right: 3em;
+ }
+
+ .nav-item .case-intro-text{
+    font-family: 'Roboto Mono', monospace;
+ }
+
+ .app-images-container {
+     background-color: #D5E2FD;
+     padding-left: 5em;
+ }
+
+ ul {
+    list-style-type: none;
+  }

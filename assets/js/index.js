@@ -1,5 +1,5 @@
 
-
+// Function to jump to a certain element in the DOM
 function jumpToElement(element) {
     if (element != null && typeof element === 'string') {
         $([document.documentElement, document.body]).animate({
@@ -10,11 +10,20 @@ function jumpToElement(element) {
     }
 
 }
+
+
+// Jump to projects section when you click on that button
 $("#projects-button").on("click", () => {
     // jump to projects-section-box
     jumpToElement("#projects-section-box")
 })
 
+
+// About button changes text when you select on it to change between HOME and ABOUT ME
+// This is a brute force naive implementation and should be cleaned up.
+// All strings used throughout the site should be kept in a constants file and referred to.
+// This eliminates the need for changing the same thing in multiple places if you want to modify
+// static text content within the site.
 $("#about-button").on("click", () => {
     var buttonText = $("#about-button").text();
 
